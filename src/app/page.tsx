@@ -1,95 +1,58 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from './page.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section className={styles.section}>
+        <div className={styles.titleWrapper}>
+          <h1 className={styles.pageTitle}>Modern Web Development Solutions</h1>
+          <p className={styles.pageSubtitle}>by Laurynas Rupainis</p>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className={styles.imageWrapper}>
+          <Image src="/dot-square.svg" alt="dots" width="740" height="430" />
+        </div>
+      </section>
+      <section className={`${styles.section} ${styles.sectionAbout}`}>
+        <h2>
+          about <span>.</span>
+        </h2>
+        <div className={styles.sectionAboutMain}>
+          <div className={styles.imageWrapperNarrow}>
+            <Image
+              src="/dot-square-2.svg"
+              alt="dots"
+              width="740"
+              height="190"
+            />
+          </div>
+          <div className={styles.sectionAboutContent}>
+            <h3>
+              Aliquam lobortis. Nam adipiscing. Donec vitae sapien ut libero
+              venenatis faucibus. Curabitur vestibulum aliquam leo.{' '}
+            </h3>
+            <div className={styles.imageWrapperLine}>
+              <Image src="/line.svg" alt="dots" width="630" height="3" />
+            </div>
+            <p>
+              Cras ultricies mi eu turpis hendrerit fringilla. Nullam accumsan
+              lorem in dui. Sed mollis, eros et ultrices tempus, mauris ipsum.
+            </p>
+            <p>
+              Aliquam libero, non adipiscing dolor urna a orci. Etiam ut purus
+              mattis mauris sodales aliquam. Praesent metus tellus, elementum
+              eu, semper a, adipiscing nec, purus.
+            </p>
+            <p>
+              Phasellus accumsan cursus velit.. Sed cursus turpis vitae tortor.
+              Curabitur turpis. Morbi ac felis.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className={styles.section}>
+        <p>Section 3</p>
+      </section>
     </main>
-  )
+  );
 }
