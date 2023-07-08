@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import styles from './page.module.css';
 import Image from 'next/image';
+import ProjectCard from '../../components/ProjectCard';
 
 export default function Home() {
   return (
@@ -47,11 +49,26 @@ export default function Home() {
               Phasellus accumsan cursus velit.. Sed cursus turpis vitae tortor.
               Curabitur turpis. Morbi ac felis.
             </p>
+            <Link className="link" href="/about">
+              more about me
+            </Link>
           </div>
         </div>
       </section>
-      <section className={styles.section}>
-        <p>Section 3</p>
+      <section className={`${styles.section} ${styles.sectionProjects}`}>
+        <h2>
+          projects <span>.</span>
+        </h2>
+        <div className={styles.sectionProjectsMain}>
+          <div className={styles.sectionCards}>
+            {[1, 2, 3].map(card => (
+              <ProjectCard></ProjectCard>
+            ))}
+          </div>
+          <Link className="link" href="/about">
+            view more projects
+          </Link>
+        </div>
       </section>
     </main>
   );

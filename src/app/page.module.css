@@ -42,7 +42,8 @@
 
 /* About Section */
 
-.sectionAbout h2 span {
+.sectionAbout h2 span,
+.sectionProjects h2 span {
   font-size: 7.6rem;
   color: var(--primary-color-purple);
 }
@@ -56,6 +57,10 @@
 
 .sectionAboutContent {
   grid-column: span 4/9;
+}
+
+.sectionAboutContent a {
+  margin-top: 8rem;
 }
 
 .sectionAboutContent p {
@@ -75,3 +80,5 @@
 .imageWrapperLine {
   margin-top: 2.5rem;
 }
+
+/* Projects Section */
