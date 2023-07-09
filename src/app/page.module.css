@@ -16,7 +16,7 @@
 }
 
 .titleWrapper {
-  padding-top: 39.5rem;
+  padding-top: 35rem;
   padding-bottom: 30.5rem;
   grid-column: span 5;
 }
@@ -115,7 +115,7 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1.6rem;
-  padding-top: 4.5rem;
+  margin-top: 10rem;
   padding-bottom: 4.5rem;
 }
 
