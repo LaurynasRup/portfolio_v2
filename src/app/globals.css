@@ -70,12 +70,13 @@ h5 {
 
 .link {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   position: relative;
+  padding-right: 2rem;
 }
 
 .link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 60%;
   transform: translateY(-60%);
@@ -87,21 +88,20 @@ h5 {
 }
 
 .link::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -0.25rem;
   left: 0;
-  width: 100%;
+  width: calc(100% - 2rem);
   height: 0.1rem;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   transition: background 0.1s ease;
 }
 
-.link:hover:after { 
+.link:hover:after {
   margin-left: 0.75rem;
 }
 
-.link:hover::before { 
+.link:hover::before {
   background-color: var(--primary-color-purple);
-
 }

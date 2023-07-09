@@ -1,3 +1,28 @@
-.card {
-  background: soli 0.1rem red;
+.card a {
+  margin-top: 2.2rem;
+}
+
+.cardImage {
+  background-color: #333333;
+  aspect-ratio: 8/5;
+}
+
+.cardTitle {
+  margin-top: 1.1rem;
+}
+
+.cardDots {
+  display: grid;
+  place-items: center;
+  margin-top: 2.4rem;
+}
+
+.cardDots img {
+  width: 100%;
+}
+
+.cardBody {
+  margin-top: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
