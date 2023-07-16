@@ -7,6 +7,36 @@
   margin-right: auto;
 }
 
+.sectionProjectsNoVis h2 {
+  opacity: 0;
+}
+
+.sectionProjectsVis h2 {
+  opacity: 1;
+  transition: opacity 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.sectionProjectsNoVis article {
+  transform: translate(15rem, 10rem);
+  opacity: 0;
+}
+
+.sectionProjectsVis article {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.sectionProjectsVis article:first-of-type {
+  transition-delay: 0.1s;
+}
+.sectionProjectsVis article:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+.sectionProjectsVis article:last-of-type {
+  transition-delay: 0.3s;
+}
+
 .sectionProjects h2 span {
   font-size: 7.6rem;
   color: var(--primary-color-purple);
@@ -20,7 +50,7 @@
 }
 
 .sectionProjectsFooter {
-  margin-top: 11rem;
+  margin-top: 20rem;
   display: flex;
   align-items: flex-start;
 }

@@ -13,7 +13,6 @@ export default function AboutSection() {
 
   useEffect(() => {
     if (inView) {
-      console.log('yes');
       setHeadingClass(styles.sectionAboutVis);
     }
   }, [inView]);
