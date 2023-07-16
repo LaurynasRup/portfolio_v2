@@ -1,0 +1,34 @@
+/* Projects Section */
+.sectionProjects {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionProjects h2 span {
+  font-size: 7.6rem;
+  color: var(--primary-color-purple);
+}
+
+.sectionProjectsCards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+  gap: 13rem;
+}
+
+.sectionProjectsFooter {
+  margin-top: 11rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sectionProjectsFooter img {
+  transform: translateX(-25%);
+}
+
+.sectionProjectsFooter a {
+  margin-left: auto;
+}
