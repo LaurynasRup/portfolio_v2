@@ -1,8 +1,8 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/AboutSection.module.css';
+import DotsGraphic from './DotsGraphic';
 
 export default function AboutSection() {
   const { ref, inView, entry } = useInView({
@@ -26,7 +26,7 @@ export default function AboutSection() {
       </h2>
       <div className={styles.sectionAboutMain}>
         <div className={styles.imageWrapperNarrow}>
-          <Image src="/dot-square-2.svg" alt="dots" width="740" height="190" />
+          <DotsGraphic width={732} height={190} />
         </div>
         <div className={styles.sectionAboutContent}>
           <h3>
@@ -34,7 +34,7 @@ export default function AboutSection() {
             venenatis faucibus. Curabitur vestibulum aliquam leo.{' '}
           </h3>
           <div className={styles.imageWrapperLine}>
-            <Image src="/line.svg" alt="dots" width="630" height="3" />
+            <DotsGraphic width={640} height={10} />
           </div>
           <p>
             Cras ultricies mi eu turpis hendrerit fringilla. Nullam accumsan

@@ -1,0 +1,34 @@
+.dotsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.dotsItem {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  perspective: 100px;
+}
+.dotsItemInner {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 100%;
+  background-color: rgba(217, 217, 217, 0.3);
+}
+
+.dotItemInnerHover {
+  animation: dot 0.75s forwards ease-in-out;
+}
+
+@keyframes dot {
+  0% {
+    background-color: rgba(217, 217, 217, 0.3);
+  }
+  50% {
+    background-color: rgba(217, 217, 217, 0.7);
+  }
+  100% {
+    background-color: rgba(217, 217, 217, 0.3);
+  }
+}

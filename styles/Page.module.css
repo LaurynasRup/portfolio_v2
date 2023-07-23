@@ -85,12 +85,13 @@
   position: relative;
 }
 
-.imageWrapper img {
+.imageWrapper div {
   position: absolute;
   top: 60%;
   transform: translateY(-65%);
   left: 0;
 }
+
 .imageWrapper .dot:hover {
   pointer-events: all;
 }

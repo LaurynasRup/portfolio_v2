@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import styles from '../styles/ProjectCard.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
+import DotsGraphic from './DotsGraphic';
 
 interface Props {
   img?: string;
@@ -15,8 +15,7 @@ const ProjectCard: FunctionComponent<Props> = ({ img, title, body, link }) => {
     <article className={styles.card}>
       <div className={styles.cardImage}></div>
       <div className={styles.cardDots}>
-        {' '}
-        <Image src="/line.svg" alt="dots" width="335" height="3" />
+        <DotsGraphic width={352} height={10} />
       </div>
       <h3 className={styles.cardTitle}>Lorem ipsum dolor sit amet</h3>
       <p className={styles.cardBody}>

@@ -1,9 +1,9 @@
 import styles from '../styles/ProjectsSection.module.css';
 import Link from 'next/link';
-import Image from 'next/image';
 import ProjectCard from '../components/ProjectCard';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
+import DotsGraphic from './DotsGraphic';
 export default function ProjectsSection() {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
@@ -30,7 +30,7 @@ export default function ProjectsSection() {
         ))}
       </div>
       <div className={styles.sectionProjectsFooter}>
-        <Image src="/dot-square-3.svg" alt="dots" width="740" height="80" />
+        <DotsGraphic width={732} height={80} />
         <Link className="link" href="/about">
           view more projects
         </Link>

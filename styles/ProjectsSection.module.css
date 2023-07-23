@@ -55,7 +55,7 @@
   align-items: flex-start;
 }
 
-.sectionProjectsFooter img {
+.sectionProjectsFooter div {
   transform: translateX(-25%);
 }
 

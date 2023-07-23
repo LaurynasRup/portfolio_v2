@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
 import AboutSection from '../../components/AboutSection';
 import ProjectsSection from '../../components/ProjectsSection';
 import styles from '../../styles/Page.module.css';
+import DotsGraphic from '../../components/DotsGraphic';
 
 export default function Home() {
   const getYear = () => {
@@ -24,13 +24,7 @@ export default function Home() {
           <p className={styles.pageSubtitle}>by Laurynas Rupainis</p>
         </div>
         <div className={styles.imageWrapper}>
-          <Image
-            src="/dot-square.svg"
-            alt="dots"
-            width="740"
-            height="430"
-            priority
-          />
+          <DotsGraphic width={732} height={465} />
         </div>
       </section>
       <AboutSection />
