@@ -15,7 +15,7 @@ const ProjectCard: FunctionComponent<Props> = ({ img, title, body, link }) => {
     <article className={styles.card}>
       <div className={styles.cardImage}></div>
       <div className={styles.cardDots}>
-        <DotsGraphic width={352} height={10} />
+        <DotsGraphic width={540} height={10} />
       </div>
       <h3 className={styles.cardTitle}>Lorem ipsum dolor sit amet</h3>
       <p className={styles.cardBody}>

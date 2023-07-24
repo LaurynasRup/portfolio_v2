@@ -11,7 +11,7 @@ export default function DotsGraphic({ width, height }: DotsProps) {
   // calculate how many dots can fit withing container
   function calcNumDots() {
     const largeArea = width * height;
-    const smallArea = 10 * 10;
+    const smallArea = 16 * 16;
     const numSqaures = Math.ceil(largeArea / smallArea);
     const result = new Array(numSqaures).fill(true).map((e, i) => i + 1);
     return result;
