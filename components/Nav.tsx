@@ -25,9 +25,12 @@ const links = [
 export default function Nav() {
   return (
     <nav className={styles.nav}>
-      <div className={`${major_mono_display.className} ${styles.nav__logo}`}>
+      <Link
+        href="/"
+        className={`${major_mono_display.className} ${styles.nav__logo}`}
+      >
         LR<span>.</span>
-      </div>
+      </Link>
       <div className={styles.nav__menu}>
         <button className={styles.nav__trigger}>menu</button>
         <ul className={styles.nav__list}>

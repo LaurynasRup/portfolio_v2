@@ -1,8 +1,49 @@
 .aboutSection {
   width: 100%;
-  padding-top: 8rem;
+  padding-top: 16rem;
   padding-bottom: 8rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10rem;
+  row-gap: 5rem;
+}
+
+.aboutSection p {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
+
+.aboutSection a {
+  grid-column: 2/3;
+  margin-left: auto;
+}
+
+.aboutSectionGraphics {
+  max-width: 44.5rem;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.aboutSectionGraphics > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.aboutSectionGraphics img {
+  z-index: 10;
+  position: relative;
+}
+
+.aboutSectionText {
+  max-width: 56rem;
+  margin-left: auto;
 }
