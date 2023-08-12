@@ -1,20 +1,57 @@
-import DotsGraphic from '../../../components/DotsGraphic';
+'use client';
+
 import styles from '../../../styles/AboutPage.module.css';
 import Link from 'next/link';
 import DotsGraphics from '../../../components/DotsGraphic';
 import Image from 'next/image';
+import { useState, useRef } from 'react';
 
 export default function About() {
+  interface ICoords {
+    x: number;
+    y: number;
+  }
+  const [mouseCoords, setMouseCoords] = useState<ICoords>({ y: 0, x: 0 });
+
+  const refCont = useRef<HTMLDivElement>(null);
+
+  const mouseMoveHandler = (event: MouseEvent): void => {
+    if (refCont.current) {
+      const rect = refCont.current.getBoundingClientRect();
+      const mouseX = event.clientX - rect.left;
+      const mouseY = event.clientY - rect.top;
+      const elHeight = rect.height;
+      const elWidth = rect.width;
+      const xPos = (mouseX - elWidth / 2) / (elWidth / 2);
+      const yPos = (mouseY - elHeight / 2) / (elHeight / 2);
+
+      setMouseCoords({ y: yPos, x: xPos });
+    }
+  };
+
+  const mouseLeaveHandler = () => {
+    setMouseCoords({ y: 0, x: 0 });
+  };
   return (
     <main>
       <section className={styles.aboutSection}>
-        <div className={styles.aboutSectionGraphics}>
+        <div
+          className={styles.aboutSectionGraphics}
+          onMouseMove={mouseMoveHandler}
+          onMouseLeave={mouseLeaveHandler}
+          ref={refCont}
+        >
           <DotsGraphics width={450} height={495} />
           <Image
             src="/profile-cutout.png"
             width={290}
             height={405}
             alt="Laurynas Rup"
+            style={{
+              transform: `rotateY(${mouseCoords.x * -15}deg) rotateX(${
+                mouseCoords.y * 15
+              }deg)`,
+            }}
           />
         </div>
         <div className={styles.aboutSectionText}>

@@ -78,6 +78,7 @@ h5 {
   text-underline-offset: 0.25rem;
   padding-right: 1.75rem;
   text-underline-offset: 0.4rem;
+  text-decoration-thickness: 0.01rem;
 }
 
 .link::after {
