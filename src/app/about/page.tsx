@@ -17,6 +17,12 @@ export default function About() {
 
   const mouseMoveHandler = (event: MouseEvent): void => {
     if (refCont.current) {
+      const img = refCont.current.querySelector('img');
+
+      if (img) {
+        img.style.transition = 'none';
+      }
+
       const rect = refCont.current.getBoundingClientRect();
       const mouseX = event.clientX - rect.left;
       const mouseY = event.clientY - rect.top;
@@ -30,14 +36,22 @@ export default function About() {
   };
 
   const mouseLeaveHandler = () => {
+    if (refCont.current) {
+      const img = refCont.current.querySelector('img');
+
+      if (img) {
+        img.style.transition = 'all 0.5s ease';
+      }
+    }
     setMouseCoords({ y: 0, x: 0 });
   };
+
   return (
     <main>
       <section className={styles.aboutSection}>
         <div
           className={styles.aboutSectionGraphics}
-          onMouseMove={mouseMoveHandler}
+          onMouseMove={() => mouseMoveHandler(event as MouseEvent)}
           onMouseLeave={mouseLeaveHandler}
           ref={refCont}
         >
@@ -48,8 +62,8 @@ export default function About() {
             height={405}
             alt="Laurynas Rup"
             style={{
-              transform: `rotateY(${mouseCoords.x * -15}deg) rotateX(${
-                mouseCoords.y * 15
+              transform: `rotateY(${mouseCoords.x * -7.5}deg) rotateX(${
+                mouseCoords.y * 7.5
               }deg)`,
             }}
           />

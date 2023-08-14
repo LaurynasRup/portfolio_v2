@@ -1,10 +1,21 @@
+.card {
+  position: relative;
+}
+
 .card a {
   margin-top: 2.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -999rem;
 }
 
 .cardImage {
   background-color: #333333;
   aspect-ratio: 8/5;
+  border-radius: 0.3rem;
 }
 
 .cardTitle {

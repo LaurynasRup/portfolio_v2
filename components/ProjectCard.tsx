@@ -23,9 +23,7 @@ const ProjectCard: FunctionComponent<Props> = ({ img, title, body, link }) => {
         curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus
         lectus integer egestas felis suspendisse.{' '}
       </p>
-      <Link href="#" className="link">
-        learn more
-      </Link>
+      <Link href="#">learn more</Link>
     </article>
   );
 };
