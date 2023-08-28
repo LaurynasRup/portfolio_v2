@@ -4,6 +4,8 @@ import ProjectCard from '../components/ProjectCard';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
 import DotsGraphic from './DotsGraphic';
+import projects from '../src/app/data';
+
 export default function ProjectsSection() {
   const { ref, inView, entry } = useInView({
     threshold: 0.5,
@@ -25,13 +27,23 @@ export default function ProjectsSection() {
         projects <span>.</span>
       </h2>
       <div className={styles.sectionProjectsCards}>
-        {[1, 2, 3].map((card, idx) => (
-          <ProjectCard key={idx}></ProjectCard>
-        ))}
+        {projects
+          .filter(el => el.promoted)
+          .map(card => (
+            <ProjectCard
+              key={card.id}
+              img="img.svg"
+              title={card.title}
+              body={card.body_short}
+              link="#"
+              tech={card.tech}
+              type={card.type}
+            ></ProjectCard>
+          ))}
       </div>
       <div className={styles.sectionProjectsFooter}>
         <DotsGraphic width={732} height={80} />
-        <Link className="link" href="/about">
+        <Link className="link" href="/projects">
           view more projects
         </Link>
       </div>

@@ -57,7 +57,7 @@ export default function About() {
         >
           <DotsGraphics width={450} height={495} />
           <Image
-            src="/profile-cutout.png"
+            src="/profile-cutout-tiny.png"
             width={290}
             height={405}
             alt="Laurynas Rup"
