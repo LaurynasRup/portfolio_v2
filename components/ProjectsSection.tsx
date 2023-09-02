@@ -7,7 +7,7 @@ import DotsGraphic from './DotsGraphic';
 import projects from '../src/app/data';
 
 export default function ProjectsSection() {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.5,
   });
 
@@ -18,6 +18,7 @@ export default function ProjectsSection() {
       setVisClass(styles.sectionProjectsVis);
     }
   }, [inView]);
+
   return (
     <section
       ref={ref}
@@ -35,7 +36,7 @@ export default function ProjectsSection() {
               img="img.svg"
               title={card.title}
               body={card.body_short}
-              link="#"
+              link={card.link}
               tech={card.tech}
               type={card.type}
             ></ProjectCard>

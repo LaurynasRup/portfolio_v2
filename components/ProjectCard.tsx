@@ -32,7 +32,7 @@ const ProjectCard: FunctionComponent<Props> = ({
         </div>
         <h3 className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardBody}>{body}</p>
-        <Link href={link}>learn more</Link>
+        <Link href={`/projects/${link}`}>learn more</Link>
       </div>
       <ul className={styles.cardTechList}>
         {tech.map(item => (

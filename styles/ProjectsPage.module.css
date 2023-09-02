@@ -17,6 +17,7 @@
 .projectFilterWrapper {
   position: relative;
   width: fit-content;
+  animation: appear 1s ease;
 }
 
 .projectFilterWrapper::after {
@@ -47,4 +48,17 @@
   border-radius: 0.3rem;
   font-weight: 400;
   z-index: 1;
+}
+
+.projectsGridx {
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

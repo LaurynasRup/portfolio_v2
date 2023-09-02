@@ -46,7 +46,7 @@ export default function page() {
               img="img.svg"
               title={card.title}
               body={card.body_short}
-              link="#"
+              link={card.link}
               tech={card.tech}
               type={card.type}
             ></ProjectCard>

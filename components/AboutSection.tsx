@@ -5,7 +5,7 @@ import styles from '../styles/AboutSection.module.css';
 import DotsGraphic from './DotsGraphic';
 
 export default function AboutSection() {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.5,
   });
 
