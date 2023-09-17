@@ -34,11 +34,11 @@ const ProjectCard: FunctionComponent<Props> = ({
         <p className={styles.cardBody}>{body}</p>
         <Link href={`/projects/${link}`}>learn more</Link>
       </div>
-      <ul className={styles.cardTechList}>
+      <ul className="techList">
         {tech.map(item => (
           <li
             key={item}
-            className={`${styles.cardTechItem}`}
+            className="techItem"
             style={{ backgroundImage: `url('/${item}.svg')` }}
           >
             {item}

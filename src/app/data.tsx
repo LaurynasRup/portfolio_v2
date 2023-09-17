@@ -4,7 +4,11 @@ const projects = [
     title: 'Project number 1',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['css', 'js', 'twig', 'drupal'],
     type: 'work',
     promoted: true,
@@ -15,7 +19,11 @@ const projects = [
     title: 'Project number 2',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['node', 'react', 'next', 'typescript'],
     type: 'personal',
     promoted: true,
@@ -26,7 +34,11 @@ const projects = [
     title: 'Project number 3',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['css', 'js', 'twig', 'drupal'],
     type: 'work',
     promoted: true,
@@ -37,7 +49,11 @@ const projects = [
     title: 'Project number 4',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['node', 'react', 'next', 'typescript'],
     type: 'personal',
     promoted: false,
@@ -48,7 +64,11 @@ const projects = [
     title: 'Project number 5',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['css', 'js', 'twig', 'drupal'],
     type: 'work',
     promoted: false,
@@ -59,7 +79,11 @@ const projects = [
     title: 'Project number 6',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['node', 'react', 'next', 'typescript'],
     type: 'personal',
     promoted: false,
@@ -70,7 +94,11 @@ const projects = [
     title: 'Project number 7',
     body_short:
       'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
-    body: 'Fusce vulputate eleifend sapien. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vivamus euismod mauris. Sed a libero. Mauris turpis nunc, blandit et, volutpat molestie, porta ut, ligula. Fusce egestas elit eget lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nulla sit amet est. Mauris sollicitudin fermentum libero. Pellentesque commodo eros a enim. Nam eget dui. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Nunc nonummy metus. Vivamus laoreet. Ut varius tincidunt libero.',
+    body: [
+      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
+      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
+      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+    ],
     tech: ['css', 'js', 'twig', 'drupal'],
     type: 'work',
     promoted: false,
