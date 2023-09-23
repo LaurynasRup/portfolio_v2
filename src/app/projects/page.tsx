@@ -10,6 +10,7 @@ export default function page() {
   const handleSelect = (event: ChangeEvent<HTMLSelectElement>) => {
     setFilterVal(event.target.value);
   };
+
   useEffect(() => {
     switch (filterVal) {
       case 'all':
@@ -25,6 +26,13 @@ export default function page() {
         setFilteredProjects(projects);
     }
   }, [filterVal]);
+
+  function getRandNum() {
+    const rndInt = Math.floor(Math.random() * 3) + 1;
+    return rndInt;
+  }
+
+  getRandNum();
   return (
     <main>
       <section className={styles.projectsSection}>
@@ -43,7 +51,7 @@ export default function page() {
           {fileteredProjects.map(card => (
             <ProjectCard
               key={card.id}
-              img="img.svg"
+              img={`/img${getRandNum()}.jpg`}
               title={card.title}
               body={card.body_short}
               link={card.link}

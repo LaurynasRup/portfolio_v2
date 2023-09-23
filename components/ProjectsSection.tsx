@@ -19,6 +19,11 @@ export default function ProjectsSection() {
     }
   }, [inView]);
 
+  function getRandNum() {
+    const rndInt = Math.floor(Math.random() * 3) + 1;
+    return rndInt;
+  }
+
   return (
     <section
       ref={ref}
@@ -33,7 +38,7 @@ export default function ProjectsSection() {
           .map(card => (
             <ProjectCard
               key={card.id}
-              img="img.svg"
+              img={`/img${getRandNum()}.jpg`}
               title={card.title}
               body={card.body_short}
               link={card.link}

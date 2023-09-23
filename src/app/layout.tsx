@@ -1,8 +1,12 @@
 import './globals.css';
-import { Red_Hat_Display, Major_Mono_Display } from 'next/font/google';
+import { Red_Hat_Display } from 'next/font/google';
 import Nav from '../../components/Nav';
 
-const red_hat_display = Red_Hat_Display({ subsets: ['latin'] });
+const rh = Red_Hat_Display({
+  subsets: ['latin'],
+  weight: ['300', '400', '500'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Laurynas Rupainis',
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={red_hat_display.className}>
+      <body className={rh.className}>
         <Nav />
         {children}
       </body>
