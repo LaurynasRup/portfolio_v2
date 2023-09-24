@@ -1,0 +1,11 @@
+/* footer */
+.pageFooter {
+  width: var(--container-width);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 10rem;
+  padding-bottom: 4.5rem;
+}

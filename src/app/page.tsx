@@ -6,10 +6,6 @@ import styles from '../../styles/Page.module.css';
 import DotsGraphic from '../../components/DotsGraphic';
 
 export default function Home() {
-  const getYear = () => {
-    return new Date().getFullYear();
-  };
-
   return (
     <main>
       <section className={styles.section}>
@@ -29,30 +25,6 @@ export default function Home() {
       </section>
       <AboutSection />
       <ProjectsSection />
-
-      <footer className={styles.pageFooter}>
-        <p>&copy; {getYear()} Laurynas Rupainis</p>
-        <div className={styles.pageFooterLinks}>
-          <a
-            href="https://www.linkedin.com/in/laurynas-rupainis-620334125/"
-            className={`${styles.pageFooterLink} ${styles.pageFooterLinkLI}`}
-          >
-            LinkedIn
-          </a>
-          <a
-            href="mailto:rupainis.laurynas@gmail.com"
-            className={`${styles.pageFooterLink} ${styles.pageFooterLinkEmail}`}
-          >
-            Email me
-          </a>
-          <a
-            href="https://github.com/LaurynasRup"
-            className={`${styles.pageFooterLink} ${styles.pageFooterLinkGH}`}
-          >
-            GitHub
-          </a>
-        </div>
-      </footer>
     </main>
   );
 }
