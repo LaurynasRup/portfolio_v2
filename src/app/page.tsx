@@ -2,7 +2,7 @@
 
 import AboutSection from '../../components/AboutSection';
 import ProjectsSection from '../../components/ProjectsSection';
-import styles from '../../styles/Page.module.css';
+import styles from '../../styles/Page.module.scss';
 import DotsGraphic from '../../components/DotsGraphic';
 
 export default function Home() {

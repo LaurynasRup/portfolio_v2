@@ -18,21 +18,21 @@
   position: relative;
   width: fit-content;
   animation: appear 1s ease;
-}
 
-.projectFilterWrapper::after {
-  content: '';
-  position: absolute;
-  right: 1.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9;
-  width: 2rem;
-  height: 2rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7559 8.92251L13.5775 7.74418L10 11.3217L6.42253 7.74418L5.24419 8.92251L10 13.6783L14.7559 8.92251Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  pointer-events: none;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7559 8.92251L13.5775 7.74418L10 11.3217L6.42253 7.74418L5.24419 8.92251L10 13.6783L14.7559 8.92251Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+  }
 }
 
 .projectFilter {

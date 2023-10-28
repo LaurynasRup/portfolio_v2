@@ -1,6 +1,6 @@
 'use client';
 
-import styles from '../../../styles/AboutPage.module.css';
+import styles from '../../../styles/AboutPage.module.scss';
 import Link from 'next/link';
 import DotsGraphics from '../../../components/DotsGraphic';
 import Image from 'next/image';

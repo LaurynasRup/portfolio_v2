@@ -1,4 +1,4 @@
-import styles from '../../../styles/Contact.module.css';
+import styles from '../../../styles/Contact.module.scss';
 import DotsGraphic from '../../../components/DotsGraphic';
 
 export default function contact() {

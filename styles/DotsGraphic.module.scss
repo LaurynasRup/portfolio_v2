@@ -3,12 +3,14 @@
   flex-wrap: wrap;
   overflow: hidden;
 }
+
 .dotsItem {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
   perspective: 100px;
 }
+
 .dotsItemInner {
   display: inline-block;
   width: 0.4rem;

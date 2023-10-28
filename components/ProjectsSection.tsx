@@ -1,4 +1,4 @@
-import styles from '../styles/ProjectsSection.module.css';
+import styles from '../styles/ProjectsSection.module.scss';
 import Link from 'next/link';
 import ProjectCard from '../components/ProjectCard';
 import { useInView } from 'react-intersection-observer';

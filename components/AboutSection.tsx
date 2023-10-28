@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/AboutSection.module.css';
+import styles from '../styles/AboutSection.module.scss';
 import DotsGraphic from './DotsGraphic';
 
 export default function AboutSection() {

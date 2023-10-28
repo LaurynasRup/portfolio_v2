@@ -1,5 +1,5 @@
 'use client';
-import styles from '../styles/DotsGraphic.module.css';
+import styles from '../styles/DotsGraphic.module.scss';
 import { useState } from 'react';
 
 export default function Dot() {

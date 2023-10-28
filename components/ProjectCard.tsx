@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import styles from '../styles/ProjectCard.module.css';
+import styles from '../styles/ProjectCard.module.scss';
 import Link from 'next/link';
 import DotsGraphic from './DotsGraphic';
 import Image from 'next/image';

@@ -1,0 +1,76 @@
+/* About Section */
+.sectionAbout {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  h2 span {
+    font-size: 7.6rem;
+    color: var(--primary-color-purple);
+  }
+}
+
+.sectionAboutNoVis {
+  h2 {
+    opacity: 0;
+  }
+
+  .imageWrapperNarrow div {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+}
+
+.sectionAboutVis {
+  h2 {
+    opacity: 1;
+    transition: opacity 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .imageWrapperNarrow div {
+    opacity: 1;
+    transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+    transition-delay: 0.15s;
+    transform: translateX(0);
+  }
+
+  .sectionAboutContent {
+    opacity: 1;
+    transition: all 0.5s ease;
+    transition-delay: 0.4s;
+    transform: translateX(0);
+  }
+}
+
+.sectionAboutMain {
+  position: relative;
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.sectionAboutContent {
+  grid-column: span 4/9;
+  opacity: 0;
+  transform: translateX(5rem);
+
+  a {
+    margin-top: 8rem;
+  }
+
+  p {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+.imageWrapperNarrow {
+  position: absolute;
+  transform: translateX(-65%);
+}
+
+.imageWrapperLine {
+  margin-top: 2.5rem;
+}
