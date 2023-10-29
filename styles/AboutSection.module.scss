@@ -1,3 +1,4 @@
+@import './mixins.scss';
 /* About Section */
 .sectionAbout {
   padding-top: 8rem;
@@ -7,8 +8,12 @@
   margin-right: auto;
 
   h2 span {
-    font-size: 7.6rem;
+    font-size: 6rem;
     color: var(--primary-color-purple);
+
+    @include mq_min780 {
+      font-size: 7.6rem;
+    }
   }
 }
 
@@ -44,17 +49,34 @@
   }
 }
 
+.imageWrapperLine {
+  display: none;
+
+  @include mq_min780 {
+    display: block;
+  }
+}
+
 .sectionAboutMain {
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr;
+
+  @include mq_min780 {
+    margin-top: 3.5rem;
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 .sectionAboutContent {
-  grid-column: span 4/9;
   opacity: 0;
   transform: translateX(5rem);
+  padding-top: 6rem;
+
+  @include mq_min780 {
+    grid-column: span 4/9;
+  }
 
   a {
     margin-top: 8rem;
@@ -62,13 +84,20 @@
 
   p {
     margin-top: 2.5rem;
-    font-size: 2rem;
   }
 }
 
 .imageWrapperNarrow {
-  position: absolute;
-  transform: translateX(-65%);
+  transform: translateX(-55%);
+  max-height: 7rem;
+  overflow: hidden;
+
+  @include mq_min780 {
+    position: absolute;
+    transform: translateX(-65%);
+    max-height: unset;
+    overflow: unset;
+  }
 }
 
 .imageWrapperLine {
