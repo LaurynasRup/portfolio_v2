@@ -1,14 +1,16 @@
+@import './mixins.scss';
+
 /* Projects Section */
 .sectionProjects {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
 
-  h2 span {
-    font-size: 7.6rem;
-    color: var(--primary-color-purple);
+  @include mq_min780 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -52,19 +54,39 @@
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
-  gap: 13rem;
+  gap: 5rem;
+
+  @include mq_min780 {
+    gap: 13rem;
+  }
 }
 
 .sectionProjectsFooter {
-  margin-top: 20rem;
+  margin-top: 8rem;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
+  gap: 2rem;
+  opacity: 0;
+  transition: opacity 1s ease;
 
   div {
-    transform: translateX(-25%);
+    transform: translateX(-30%);
+
+    @include mq_min780 {
+      transform: translateX(-25%);
+    }
   }
 
   a {
     margin-left: auto;
+    white-space: pre;
+    word-wrap: break-word;
+  }
+}
+
+.sectionProjectsVis {
+  .sectionProjectsFooter {
+    opacity: 1;
   }
 }

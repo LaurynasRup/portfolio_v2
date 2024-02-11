@@ -2,6 +2,11 @@ import styles from '../styles/HeroSection.module.scss';
 import DotsGraphic from './DotsGraphic';
 
 export default function HeroSection() {
+  const dotsDimensions = {
+    width: 732,
+    height: window.innerWidth < 720 ? 150 : 470,
+  };
+
   return (
     <section className={styles.heroSection}>
       <div className={styles.titleWrapper}>
@@ -15,7 +20,10 @@ export default function HeroSection() {
         <p className={styles.pageSubtitle}>by Laurynas Rupainis</p>
       </div>
       <div className={styles.imageWrapper}>
-        <DotsGraphic width={732} height={465} />
+        <DotsGraphic
+          width={dotsDimensions.width}
+          height={dotsDimensions.height}
+        />
       </div>
     </section>
   );

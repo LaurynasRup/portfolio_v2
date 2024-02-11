@@ -1,23 +1,39 @@
+@import './mixins.scss';
+
 .projectsSection {
-  padding-top: 16rem;
+  padding-top: 6rem;
   padding-bottom: 8rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
+
+  @include mq_min780 {
+    padding-top: 16rem;
+  }
 }
 
 .projectsGridx {
-  margin-top: 4.6rem;
+  margin-top: 3rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
-  gap: 10rem;
+  gap: 5rem;
+
+  @include mq_min780 {
+    gap: 10rem;
+    margin-top: 4.6rem;
+  }
 }
 
 .projectFilterWrapper {
   position: relative;
-  width: fit-content;
+  width: 100%;
   animation: appear 1s ease;
+  display: flex;
+
+  @include mq_min780 {
+    width: fit-content;
+  }
 
   &::after {
     content: '';
@@ -42,12 +58,13 @@
   font-size: 1.6rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   min-width: 15rem;
   border-radius: 0.3rem;
   font-weight: 400;
   z-index: 1;
+  flex-grow: 1;
 }
 
 .projectsGridx {

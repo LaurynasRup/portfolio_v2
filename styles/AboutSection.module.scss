@@ -2,18 +2,13 @@
 /* About Section */
 .sectionAbout {
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
 
-  h2 span {
-    font-size: 6rem;
-    color: var(--primary-color-purple);
-
-    @include mq_min780 {
-      font-size: 7.6rem;
-    }
+  @include mq_min780 {
+    padding-bottom: 8rem;
   }
 }
 

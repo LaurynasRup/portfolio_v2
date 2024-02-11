@@ -21,9 +21,7 @@ export default function AboutSection() {
       ref={ref}
       className={`${styles.section} ${styles.sectionAbout} ${headingClass}`}
     >
-      <h2>
-        about <span>.</span>
-      </h2>
+      <h2 className="section-heading">about</h2>
       <div className={styles.sectionAboutMain}>
         <div className={styles.imageWrapperNarrow}>
           <DotsGraphic width={760} height={160} />
