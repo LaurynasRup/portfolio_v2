@@ -70,6 +70,10 @@
   padding-top: 6rem;
 
   @include mq_min780 {
+    padding-top: unset;
+  }
+
+  @include mq_min780 {
     grid-column: span 4/9;
   }
 
