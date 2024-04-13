@@ -5,7 +5,8 @@
 }
 
 .dotsItem {
-  display: inline-block;
+  display: grid;
+  place-content: center;
   width: 1.6rem;
   height: 1.6rem;
   perspective: 100px;

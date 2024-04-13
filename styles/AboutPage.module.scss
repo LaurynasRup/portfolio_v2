@@ -1,15 +1,22 @@
+@import './mixins.scss';
+
 .aboutSection {
   width: 100%;
-  padding-top: 16rem;
+  padding-top: 6rem;
   padding-bottom: 8rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10rem;
-  row-gap: 5rem;
+  display: block;
   perspective: 1000rem;
+
+  @include mq_min780 {
+    display: grid;
+    column-gap: 10rem;
+    row-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 16rem;
+  }
 
   p {
     margin-top: 2.5rem;
@@ -21,6 +28,12 @@
     margin-left: auto;
     animation: slide-left 1.25s cubic-bezier(0.65, 0, 0.35, 1) both;
     animation-delay: 0.6s;
+    display: block;
+    margin-top: 2rem;
+
+    @include mq_min780 {
+      margin-top: unset;
+    }
   }
 }
 
@@ -63,11 +76,19 @@
 }
 
 .aboutSectionText {
-  max-width: 56rem;
-  margin-left: auto;
+  max-width: unset;
+  margin-left: unset;
   opacity: 0;
   animation: slide-left 1.25s cubic-bezier(0.65, 0, 0.35, 1) both;
   animation-delay: 0.5s;
+  text-align: justify;
+  margin-top: 4rem;
+
+  @include mq_min780 {
+    margin-top: unset;
+    margin-left: auto;
+    max-width: 56rem;
+  }
 }
 
 @keyframes slide-left {

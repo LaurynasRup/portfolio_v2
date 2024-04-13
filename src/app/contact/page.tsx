@@ -1,7 +1,31 @@
+'use client';
 import styles from '../../../styles/Contact.module.scss';
 import DotsGraphic from '../../../components/DotsGraphic';
+import { useEffect, useState } from 'react';
 
-export default function contact() {
+export default function Contact() {
+  const [dotsDimensions, setDotsDimensions] = useState({
+    height: 48,
+    width: window.innerWidth < 720 ? 280 : 560,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDotsDimensions({
+        height: 48,
+        width: window.innerWidth < 720 ? 280 : 560,
+      });
+    };
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <main>
       <section className={styles.contactPageSection}>
@@ -16,7 +40,7 @@ export default function contact() {
               },
               { name: 'github', link: 'https://github.com/LaurynasRup' },
             ].map(el => (
-              <li>
+              <li key={el.name}>
                 <a
                   className={`${styles.contactItemLink} ${styles[el.name]}`}
                   href={el.link}
@@ -26,7 +50,10 @@ export default function contact() {
               </li>
             ))}
           </ul>
-          <DotsGraphic width={555} height={50} />
+          <DotsGraphic
+            width={dotsDimensions.width}
+            height={dotsDimensions.height}
+          />
         </div>
       </section>
     </main>

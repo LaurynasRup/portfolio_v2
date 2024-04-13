@@ -1,17 +1,40 @@
+@import './mixins.scss';
+
 .wrapper {
-  padding-top: 12rem;
+  padding-top: 6rem;
   padding-bottom: 8rem;
   width: var(--container-width);
   margin-left: auto;
   margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10rem;
+  display: flex;
+  flex-direction: column;
+
+  @include mq_min780 {
+    padding-top: 12rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+  }
+
+  article {
+    order: -1;
+    margin-top: 1.5rem;
+
+    @include mq_min780 {
+      margin-top: 7rem;
+      order: unset;
+    }
+  }
 }
 
 .wrapper h1 {
   grid-column: 1/3;
   font-size: 3.9rem;
+  order: -2;
+
+  @include mq_min780 {
+    order: unset;
+  }
 }
 
 .textWrapper {
@@ -27,6 +50,10 @@
   grid-column: 1/2;
   margin-top: 1.6rem;
   font-size: 1.8rem;
+  text-align: justify;
+  @include mq_min780 {
+    text-align: unset;
+  }
 }
 
 .projectBody p + p {
@@ -37,25 +64,47 @@
   margin-top: 10rem;
   grid-column: 1/3;
   display: grid;
-  grid-template-columns: inherit;
   column-gap: inherit;
+  grid-template-columns: 1fr;
+
+  @include mq_min780 {
+    grid-template-columns: inherit;
+  }
 }
 
 .projectFooter a {
-  grid-column: 2/3;
+  grid-column: unset;
   display: inline-block;
-  margin-left: auto;
+  margin-left: unset;
+  margin-bottom: 2rem;
   animation: appear 0.5s cubic-bezier(0.65, 0, 0.35, 1) both;
+  order: -1;
+  // transform: translateY(100%);
+
+  @include mq_min780 {
+    margin-bottom: unset;
+    margin-left: auto;
+    grid-column: 2/3;
+    transform: translateY(100%);
+  }
 }
 
 .projectFooterDots {
-  grid-column: 1/2;
+  grid-column: unset;
   animation: slide-right 1.25s cubic-bezier(0.65, 0, 0.35, 1) both;
   animation-delay: 0.1s;
+
+  @include mq_min780 {
+    grid-column: 1/2;
+  }
 }
 
 .projectFooterDots > div {
-  transform: translateX(-35rem);
+  transform: translateX(-50rem);
+
+  @include mq_min780 {
+    transform: translateX(-35rem);
+  }
 }
 
 @keyframes appear {

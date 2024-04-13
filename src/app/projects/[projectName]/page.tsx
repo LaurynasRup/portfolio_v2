@@ -17,8 +17,8 @@ export default function page() {
   return (
     <main>
       <section className={styles.wrapper}>
+        {project && <h1>Project: {project.title}</h1>}
         <div className={styles.textWrapper}>
-          {project && <h1>Project: {project.title}</h1>}
           <ul className={`${styles.projectTechList} techList`}>
             {project.tech.map(item => (
               <li

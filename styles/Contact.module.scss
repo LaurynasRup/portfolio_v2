@@ -1,35 +1,52 @@
+@import './mixins.scss';
+
 .contactPageSection {
   width: 100%;
-  padding-top: 28rem;
-  padding-bottom: 24rem;
+  padding-top: 16rem;
+  padding-bottom: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
+
+  @include mq_min780 {
+    padding-top: 28rem;
+    padding-bottom: 24rem;
+  }
 }
 
 .contactPageSectionInner {
-  width: 76rem;
-  height: 16rem;
+  min-width: 100%;
+  min-height: 16rem;
   display: grid;
   place-content: center;
   position: relative;
   margin-left: auto;
   margin-right: auto;
 
+  @include mq_min780 {
+    min-width: 76rem;
+    min-height: 16rem;
+  }
+
   > div {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
   }
 }
 
 .contactItems {
   display: flex;
+  flex-direction: column;
   list-style: none;
   gap: 4rem;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
+
+  @include mq_min780 {
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
 }
 
 .contactItemLink {

@@ -12,15 +12,14 @@ export default function ProjectsSection() {
   });
 
   const dotsDimensions = {
-    width: window.innerWidth < 720 ? 300 : 732,
-    height: window.innerWidth < 720 ? 70 : 80,
+    width: window.innerWidth < 720 ? 304 : 736,
+    height: window.innerWidth < 720 ? 64 : 80,
   };
 
   const [visClass, setVisClass] = useState(styles.sectionProjectsNoVis);
 
   useEffect(() => {
     if (inView) {
-      console.log(inView);
       setVisClass(styles.sectionProjectsVis);
     }
   }, [inView]);

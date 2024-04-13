@@ -24,7 +24,7 @@ export default function AboutSection() {
       <h2 className="section-heading">about</h2>
       <div className={styles.sectionAboutMain}>
         <div className={styles.imageWrapperNarrow}>
-          <DotsGraphic width={760} height={160} />
+          <DotsGraphic width={1008} height={160} />
         </div>
         <div className={styles.sectionAboutContent}>
           <h3>

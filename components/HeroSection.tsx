@@ -3,8 +3,8 @@ import DotsGraphic from './DotsGraphic';
 
 export default function HeroSection() {
   const dotsDimensions = {
-    width: 732,
-    height: window.innerWidth < 720 ? 150 : 470,
+    width: 736,
+    height: window.innerWidth < 720 ? 144 : 464,
   };
 
   return (

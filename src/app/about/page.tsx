@@ -55,7 +55,7 @@ export default function About() {
           onMouseLeave={mouseLeaveHandler}
           ref={refCont}
         >
-          <DotsGraphics width={450} height={495} />
+          <DotsGraphics width={448} height={496} />
           <Image
             src="/profile-cutout-tiny.png"
             width={290}
