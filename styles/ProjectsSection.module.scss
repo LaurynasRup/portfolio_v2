@@ -1,0 +1,92 @@
+@import './mixins.scss';
+
+/* Projects Section */
+.sectionProjects {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq_min780 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.sectionProjectsNoVis {
+  h2 {
+    opacity: 0;
+  }
+
+  article {
+    transform: translate(15rem, 10rem);
+    opacity: 0;
+  }
+}
+
+.sectionProjectsVis {
+  h2 {
+    opacity: 1;
+    transition: opacity 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  article {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  article:first-of-type {
+    transition-delay: 0.1s;
+  }
+
+  article:nth-of-type(2) {
+    transition-delay: 0.2s;
+  }
+
+  article:last-of-type {
+    transition-delay: 0.3s;
+  }
+}
+
+.sectionProjectsCards {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+  gap: 5rem;
+
+  @include mq_min780 {
+    gap: 13rem;
+  }
+}
+
+.sectionProjectsFooter {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  div {
+    transform: translateX(-30%);
+
+    @include mq_min780 {
+      transform: translateX(-25%);
+    }
+  }
+
+  a {
+    margin-left: auto;
+    white-space: pre;
+    word-wrap: break-word;
+  }
+}
+
+.sectionProjectsVis {
+  .sectionProjectsFooter {
+    opacity: 1;
+  }
+}

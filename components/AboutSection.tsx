@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/AboutSection.module.css';
+import styles from '../styles/AboutSection.module.scss';
 import DotsGraphic from './DotsGraphic';
 
 export default function AboutSection() {
@@ -21,12 +21,10 @@ export default function AboutSection() {
       ref={ref}
       className={`${styles.section} ${styles.sectionAbout} ${headingClass}`}
     >
-      <h2>
-        about <span>.</span>
-      </h2>
+      <h2 className="section-heading">about</h2>
       <div className={styles.sectionAboutMain}>
         <div className={styles.imageWrapperNarrow}>
-          <DotsGraphic width={760} height={160} />
+          <DotsGraphic width={1008} height={160} />
         </div>
         <div className={styles.sectionAboutContent}>
           <h3>

@@ -1,5 +1,5 @@
 'use client';
-import styles from '../styles/DotsGraphic.module.css';
+import styles from '../styles/DotsGraphic.module.scss';
 import Dot from './Dot';
 
 interface DotsProps {
@@ -12,7 +12,7 @@ export default function DotsGraphic({ width, height }: DotsProps) {
   function calcNumDots() {
     const largeArea = width * height;
     const smallArea = 16 * 16;
-    const numSqaures = Math.ceil(largeArea / smallArea);
+    const numSqaures = Math.floor(largeArea / smallArea);
     const result = new Array(numSqaures).fill(true).map((e, i) => i + 1);
     return result;
   }

@@ -1,0 +1,165 @@
+@import './mixins.scss';
+
+.heroSection {
+  --dots-animation-duration: 0.4s;
+
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  min-height: unset;
+  display: grid;
+  padding-top: unset;
+  padding-bottom: unset;
+  grid-template-columns: 1fr;
+
+  @include mq_min780 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.titleWrapper {
+  grid-column: span 5;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+
+  @include mq_min780 {
+    padding-top: 35rem;
+    padding-bottom: 30.5rem;
+    grid-template-rows: 1fr;
+  }
+}
+
+.pageTitle {
+  max-width: 82rem;
+  line-height: 1.2;
+  line-height: 1.1;
+  font-size: 3.2rem;
+
+  @include mq_min780 {
+    font-size: 5.6rem;
+  }
+}
+
+.pageTitleSpanOuter {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.pageTitleSpanInner {
+  display: inline-block;
+  animation: slide-up 0.6s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.pageTitle {
+  .pageTitleSpanOuter:nth-child(1) .pageTitleSpanInner {
+    animation-delay: calc(var(--dots-animation-duration) + 0.15s);
+    // animation-delay: 0.15s;
+  }
+  .pageTitleSpanOuter:nth-child(2) .pageTitleSpanInner {
+    animation-delay: calc(var(--dots-animation-duration) + 0.225s);
+    // animation-delay: 0.225s;
+  }
+  .pageTitleSpanOuter:nth-child(3) .pageTitleSpanInner {
+    animation-delay: calc(var(--dots-animation-duration) + 0.275s);
+    // animation-delay: 0.275s;
+  }
+  .pageTitleSpanOuter:nth-child(4) .pageTitleSpanInner {
+    animation-delay: calc(var(--dots-animation-duration) + 0.425s);
+    // animation-delay: 0.425s;
+  }
+}
+
+.pageSubtitle {
+  font-size: 3.2rem;
+  margin-top: 2.5rem;
+  animation: slide-right 0.75s cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation-delay: calc(var(--dots-animation-duration) + 0.6s);
+  // animation-delay: 0.6s;
+  font-size: 2rem;
+
+  @include mq_min780 {
+    font-size: 3.2rem;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  order: -1;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  margin-right: -2rem;
+  animation: slide-left 0.75s cubic-bezier(0.65, 0, 0.35, 1) both;
+
+  @include mq_min780 {
+    overflow: unset;
+    padding-top: unset;
+    padding-bottom: unset;
+    order: unset;
+    grid-column: span 3;
+    margin-right: unset;
+  }
+
+  div {
+    position: relative;
+    max-height: 32.5rem;
+    top: 60%;
+    transform: translateY(-65%);
+    left: 40%;
+
+    @include mq_min780 {
+      position: absolute;
+      max-height: unset;
+      left: 0;
+    }
+  }
+
+  .dot:hover {
+    pointer-events: all;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(30rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

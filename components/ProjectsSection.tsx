@@ -1,4 +1,4 @@
-import styles from '../styles/ProjectsSection.module.css';
+import styles from '../styles/ProjectsSection.module.scss';
 import Link from 'next/link';
 import ProjectCard from '../components/ProjectCard';
 import { useInView } from 'react-intersection-observer';
@@ -8,8 +8,13 @@ import projects from '../src/app/data';
 
 export default function ProjectsSection() {
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: window.innerWidth < 720 ? 0.2 : 0.5,
   });
+
+  const dotsDimensions = {
+    width: window.innerWidth < 720 ? 304 : 736,
+    height: window.innerWidth < 720 ? 64 : 80,
+  };
 
   const [visClass, setVisClass] = useState(styles.sectionProjectsNoVis);
 
@@ -29,9 +34,7 @@ export default function ProjectsSection() {
       ref={ref}
       className={`${styles.section} ${styles.sectionProjects} ${visClass}`}
     >
-      <h2>
-        projects <span>.</span>
-      </h2>
+      <h2 className="section-heading">projects</h2>
       <div className={styles.sectionProjectsCards}>
         {projects
           .filter(el => el.promoted)
@@ -48,7 +51,10 @@ export default function ProjectsSection() {
           ))}
       </div>
       <div className={styles.sectionProjectsFooter}>
-        <DotsGraphic width={732} height={80} />
+        <DotsGraphic
+          width={dotsDimensions.width}
+          height={dotsDimensions.height}
+        />
         <Link className="link" href="/projects">
           view more projects
         </Link>

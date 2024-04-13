@@ -1,5 +1,5 @@
 'use client';
-import styles from '../styles/imageSwiper.module.css';
+import styles from '../styles/imageSwiper.module.scss';
 import Image from 'next/image';
 // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +7,6 @@ import { Navigation } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 interface p {
   img: Array<string>;
 }
@@ -23,10 +22,9 @@ export default function imageSwiper({ img }: p) {
       >
         {img &&
           img.map(el => (
-            <SwiperSlide>
+            <SwiperSlide key={el}>
               <Image
                 priority
-                key={el}
                 src={el}
                 width={820}
                 height={350}

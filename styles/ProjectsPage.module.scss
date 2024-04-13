@@ -1,0 +1,81 @@
+@import './mixins.scss';
+
+.projectsSection {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq_min780 {
+    padding-top: 16rem;
+  }
+}
+
+.projectsGridx {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+  gap: 5rem;
+
+  @include mq_min780 {
+    gap: 10rem;
+    margin-top: 4.6rem;
+  }
+}
+
+.projectFilterWrapper {
+  position: relative;
+  width: 100%;
+  animation: appear 1s ease;
+  display: flex;
+
+  @include mq_min780 {
+    width: fit-content;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    width: 2rem;
+    height: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7559 8.92251L13.5775 7.74418L10 11.3217L6.42253 7.74418L5.24419 8.92251L10 13.6783L14.7559 8.92251Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+  }
+}
+
+.projectFilter {
+  all: unset;
+  background-color: #333;
+  color: var(--primary-color-light);
+  font-size: 1.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-width: 15rem;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.projectsGridx {
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

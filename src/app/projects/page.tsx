@@ -1,5 +1,5 @@
 'use client';
-import styles from '../../../styles/ProjectsPage.module.css';
+import styles from '../../../styles/ProjectsPage.module.scss';
 import projects from '../data';
 import ProjectCard from '../../../components/ProjectCard';
 import { useState, ChangeEvent, useEffect } from 'react';
