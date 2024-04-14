@@ -41,7 +41,12 @@ export default function page() {
         {project.img && <ImageSwiper img={project.img} />}
         <div className={styles.projectFooter}>
           <div className={styles.projectFooterDots}>
-            <DotsGraphic width={800} height={80} />
+            <DotsGraphic
+              width={800}
+              height={80}
+              mobileWidth={800}
+              mobileHeight={80}
+            />
           </div>
           <Link className="link" href="/projects">
             all projects

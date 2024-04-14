@@ -51,7 +51,7 @@ export default function page() {
           {fileteredProjects.map(card => (
             <ProjectCard
               key={card.id}
-              img={`/img${getRandNum()}.jpg`}
+              img={`/img2.jpg`}
               title={card.title}
               body={card.body_short}
               link={card.link}

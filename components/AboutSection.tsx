@@ -24,7 +24,12 @@ export default function AboutSection() {
       <h2 className="section-heading">about</h2>
       <div className={styles.sectionAboutMain}>
         <div className={styles.imageWrapperNarrow}>
-          <DotsGraphic width={1008} height={160} />
+          <DotsGraphic
+            width={1008}
+            height={160}
+            mobileWidth={1008}
+            mobileHeight={160}
+          />
         </div>
         <div className={styles.sectionAboutContent}>
           <h3>
@@ -32,7 +37,12 @@ export default function AboutSection() {
             venenatis faucibus. Curabitur vestibulum aliquam leo.{' '}
           </h3>
           <div className={styles.imageWrapperLine}>
-            <DotsGraphic width={1000} height={10} />
+            <DotsGraphic
+              width={1000}
+              height={10}
+              mobileWidth={1000}
+              mobileHeight={10}
+            />
           </div>
           <p>
             Cras ultricies mi eu turpis hendrerit fringilla. Nullam accumsan

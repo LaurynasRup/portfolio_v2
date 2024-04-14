@@ -1,3 +1,4 @@
+'use client';
 import styles from '../styles/ProjectsSection.module.scss';
 import Link from 'next/link';
 import ProjectCard from '../components/ProjectCard';
@@ -7,14 +8,19 @@ import DotsGraphic from './DotsGraphic';
 import projects from '../src/app/data';
 
 export default function ProjectsSection() {
-  const { ref, inView } = useInView({
-    threshold: window.innerWidth < 720 ? 0.2 : 0.5,
-  });
+  const [th, setTh] = useState(0);
 
-  const dotsDimensions = {
-    width: window.innerWidth < 720 ? 304 : 736,
-    height: window.innerWidth < 720 ? 64 : 80,
-  };
+  useEffect(() => {
+    if (window.innerWidth > 720) {
+      setTh(0.5);
+    } else {
+      setTh(0.2);
+    }
+  }, []);
+
+  const { ref, inView } = useInView({
+    threshold: th,
+  });
 
   const [visClass, setVisClass] = useState(styles.sectionProjectsNoVis);
 
@@ -23,11 +29,6 @@ export default function ProjectsSection() {
       setVisClass(styles.sectionProjectsVis);
     }
   }, [inView]);
-
-  function getRandNum() {
-    const rndInt = Math.floor(Math.random() * 3) + 1;
-    return rndInt;
-  }
 
   return (
     <section
@@ -41,7 +42,7 @@ export default function ProjectsSection() {
           .map(card => (
             <ProjectCard
               key={card.id}
-              img={`/img${getRandNum()}.jpg`}
+              img={`/img1.jpg`}
               title={card.title}
               body={card.body_short}
               link={card.link}
@@ -52,8 +53,10 @@ export default function ProjectsSection() {
       </div>
       <div className={styles.sectionProjectsFooter}>
         <DotsGraphic
-          width={dotsDimensions.width}
-          height={dotsDimensions.height}
+          width={736}
+          height={80}
+          mobileWidth={304}
+          mobileHeight={64}
         />
         <Link className="link" href="/projects">
           view more projects
