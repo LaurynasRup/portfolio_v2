@@ -106,7 +106,7 @@
 }
 
 .navVisible + .navList {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
@@ -134,6 +134,7 @@
   }
 
   @include mq_min780 {
+    position: absolute;
     margin-top: -1rem;
     right: unset;
     width: unset;

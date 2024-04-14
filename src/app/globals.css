@@ -33,6 +33,11 @@ body {
   font-size: 1.8rem;
 }
 
+body.no-scroll {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 a {
   color: inherit;
   text-decoration: none;
