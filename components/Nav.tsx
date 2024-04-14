@@ -40,6 +40,7 @@ export default function Nav() {
   const handleBtnClick = function (e: React.MouseEvent<HTMLElement>) {
     if (wWidth < 720) {
       (e.target as Element).classList.toggle(styles.navVisible);
+      document.body.classList.add('no-scroll');
     }
   };
   const handleMouseEnter = function (e: React.MouseEvent<HTMLElement>) {
@@ -59,11 +60,11 @@ export default function Nav() {
 
     const link = (e.target as HTMLAnchorElement).href;
 
+    window.location.href = link;
+
     if (ref.current && ref.current.classList.contains(styles.navVisible)) {
       ref.current.classList.remove(styles.navVisible);
     }
-
-    window.location.href = link;
   };
 
   return (
@@ -71,6 +72,7 @@ export default function Nav() {
       <Link
         href="/"
         className={`${major_mono_display.className} ${styles.navLogo}`}
+        onClick={handleLinkClick}
       >
         LR<span>.</span>
       </Link>
@@ -85,6 +87,7 @@ export default function Nav() {
           menu
         </button>
         <ul className={styles.navList}>
+          <div className={styles.navTopPadding}></div>
           {links.map((link, idx) => (
             <li data-delay={idx + 1} key={idx}>
               <Link href={link.link} onClick={handleLinkClick}>
