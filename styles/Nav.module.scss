@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -18,7 +20,10 @@
 
 .navMenu {
   font-size: 1.8rem;
-  position: relative;
+
+  @include mq_min780 {
+    position: relative;
+  }
 }
 
 .navTrigger {
@@ -38,8 +43,12 @@
   margin-top: -1rem;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 1.25s ease;
+  transition: opacity 0.5s ease;
   z-index: 9;
+
+  @include mq_min780 {
+    transition: opacity 1.25s ease;
+  }
 
   li {
     opacity: 0;
@@ -85,13 +94,66 @@
 }
 
 .navList:hover li,
-.navTrigger:hover + .navList li {
+.navVisible + .navList li {
   pointer-events: all;
   opacity: 1;
   transform: translateX(0);
 }
 
 .navList:hover,
-.navTrigger:hover + .navList {
+.navVisible + .navList {
   opacity: 1;
+}
+
+.navVisible + .navList {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin-top: 8rem;
+  background-color: var(--primary-color-dark);
+  padding: 2rem;
+  gap: 5rem;
+  z-index: 999;
+  overflow: hidden;
+
+  li:first-of-type {
+    margin-top: auto;
+  }
+
+  li:last-of-type {
+    margin-bottom: auto;
+  }
+
+  li {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq_min780 {
+    margin-top: -1rem;
+    right: unset;
+    width: unset;
+    top: 100%;
+    left: 2rem;
+    bottom: unset;
+    padding: unset;
+    gap: unset;
+
+    li:first-of-type {
+      margin-top: unset;
+    }
+
+    li:last-of-type {
+      margin-bottom: unset;
+    }
+
+    li {
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
 }

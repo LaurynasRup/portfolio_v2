@@ -4,28 +4,6 @@ import DotsGraphic from '../../../components/DotsGraphic';
 import { useEffect, useState } from 'react';
 
 export default function Contact() {
-  const [dotsDimensions, setDotsDimensions] = useState({
-    height: 48,
-    width: window.innerWidth < 720 ? 280 : 560,
-  });
-
-  useEffect(() => {
-    const handleResize = () => {
-      setDotsDimensions({
-        height: 48,
-        width: window.innerWidth < 720 ? 280 : 560,
-      });
-    };
-
-    // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <main>
       <section className={styles.contactPageSection}>
@@ -51,8 +29,10 @@ export default function Contact() {
             ))}
           </ul>
           <DotsGraphic
-            width={dotsDimensions.width}
-            height={dotsDimensions.height}
+            width={560}
+            height={48}
+            mobileWidth={280}
+            mobileHeight={48}
           />
         </div>
       </section>
