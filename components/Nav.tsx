@@ -31,6 +31,7 @@ const links = [
 
 export default function Nav() {
   const [wWidth, setWwidth] = useState(0);
+  const [pathName, setPathName] = useState('');
 
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -40,6 +41,8 @@ export default function Nav() {
     } else {
       setWwidth(1);
     }
+
+    setPathName(window.location.pathname);
   }, []);
   const handleBtnClick = function (e: React.MouseEvent<HTMLElement>) {
     if (wWidth < 720) {
@@ -72,9 +75,8 @@ export default function Nav() {
   };
 
   const handleActiveLink = function (link: string) {
-    const currentLink = window.location.pathname;
     
-    if (currentLink === link) {
+    if (pathName && pathName !== "" && pathName === link) {
       return true;
     }
   }
