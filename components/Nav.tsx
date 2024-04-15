@@ -12,6 +12,10 @@ const major_mono_display = Major_Mono_Display({
 
 const links = [
   {
+    link: '/',
+    text: 'home',
+  },
+  {
     link: '/about',
     text: 'about',
   },
@@ -67,6 +71,14 @@ export default function Nav() {
     }
   };
 
+  const handleActiveLink = function (link: string) {
+    const currentLink = window.location.pathname;
+    
+    if (currentLink === link) {
+      return true;
+    }
+  }
+
   return (
     <nav className={styles.nav}>
       <Link
@@ -89,7 +101,7 @@ export default function Nav() {
         <ul className={styles.navList}>
           <div className={styles.navTopPadding}></div>
           {links.map((link, idx) => (
-            <li data-delay={idx + 1} key={idx}>
+            <li data-delay={idx + 1} key={idx} className={handleActiveLink(link.link) ? styles.navActiveLink : ''}>
               <Link href={link.link} onClick={handleLinkClick}>
                 {link.text}
               </Link>
