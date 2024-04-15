@@ -80,8 +80,8 @@
   a::after {
     content: '\2022';
     position: relative;
-    right: 0;
-    top: 0;
+    right: -0.1rem;
+    top: 0.2rem;
     color: var(--primary-color-purple);
     font-size: 2.25rem;
     opacity: 0;
@@ -91,6 +91,10 @@
   a:hover::after {
     opacity: 1;
   }
+}
+
+.navActiveLink a::after {
+  opacity: 1;
 }
 
 .navList:hover li,
