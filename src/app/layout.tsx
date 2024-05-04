@@ -11,7 +11,7 @@ const rh = Red_Hat_Display({
 
 export const metadata = {
   title: 'Laurynas Rupainis',
-  description: 'Laurynas Ruapinis - web developer prtfolio',
+  description: 'Laurynas Rupainis - web developer portfolio',
 };
 
 export default function RootLayout({
