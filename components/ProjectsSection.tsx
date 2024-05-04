@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect } from 'react';
 import DotsGraphic from './DotsGraphic';
-import projects from '../src/app/data';
+import projects from '../data';
 
 export default function ProjectsSection() {
   const [th, setTh] = useState(0);

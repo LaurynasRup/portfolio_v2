@@ -1,7 +1,10 @@
-'use client';
 import styles from '../../../styles/Contact.module.scss';
 import DotsGraphic from '../../../components/DotsGraphic';
-import { useEffect, useState } from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Laurynas Rupainis | Contact',
+};
 
 export default function Contact() {
   return (
