@@ -32,10 +32,7 @@ export default function AboutSection() {
           />
         </div>
         <div className={styles.sectionAboutContent}>
-          <h3>
-            Aliquam lobortis. Nam adipiscing. Donec vitae sapien ut libero
-            venenatis faucibus. Curabitur vestibulum aliquam leo.{' '}
-          </h3>
+          <h3>Hi I am Laurynas Rupainis,</h3>
           <div className={styles.imageWrapperLine}>
             <DotsGraphic
               width={1000}
@@ -45,17 +42,16 @@ export default function AboutSection() {
             />
           </div>
           <p>
-            Cras ultricies mi eu turpis hendrerit fringilla. Nullam accumsan
-            lorem in dui. Sed mollis, eros et ultrices tempus, mauris ipsum.
+            Hey there, I'm Laurynas Rupainis, a web developer based in Kent.
+            Since 2020, I've been deeply involved in web development, advancing
+            steadily from junior to seasoned professional. While I specialize in
+            Drupal development, I also leverage Next.js to elevate user
+            experiences.
           </p>
           <p>
-            Aliquam libero, non adipiscing dolor urna a orci. Etiam ut purus
-            mattis mauris sodales aliquam. Praesent metus tellus, elementum eu,
-            semper a, adipiscing nec, purus.
-          </p>
-          <p>
-            Phasellus accumsan cursus velit.. Sed cursus turpis vitae tortor.
-            Curabitur turpis. Morbi ac felis.
+            Currently, I'm exploring Rust, captivated by its potential for
+            innovation across different domains, driving my curiosity and
+            passion for continual learning.
           </p>
           <Link className="link" href="/about">
             more about me

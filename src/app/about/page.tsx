@@ -13,26 +13,23 @@ export default function About() {
       <section className={styles.aboutSection}>
         <PersonImage />
         <div className={styles.aboutSectionText}>
-          <h3>
-            Aliquam lobortis. Nam adipiscing. Donec vitae sapien ut libero.
-          </h3>
+          <h3>Hi, I am Laurynas Rupainis,</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            expedita iste neque ipsum ducimus maxime, id labore nisi. Odit, ab
-            sequi! Natus quae distinctio harum voluptas voluptates adipisci aut
-            optio maiores rerum architecto voluptatum, iure modi reprehenderit.
+            I'm Laurynas Rupainis, an experienced web developer from Kent. Since
+            early 2020, I've advanced from a junior to a seasoned professional.
+            While I specialize in Drupal development, exploring frontend
+            intricacies and backend functionalities, I also embrace various
+            technologies to broaden my skill set.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            obcaecati molestias aliquam accusamus sequi. Facilis ea suscipit
-            magni distinctio maxime sed accusamus est corrupti dolores, dicta
-            mollitia sapiente alias quam animi consequatur voluptatibus!
+            Staying updated with the latest advancements is crucial. I utilize
+            Next.js in personal projects for enhanced user experiences.
+            Currently, I'm exploring Rust for its innovation and learning
+            potential.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            deleniti, sunt similique dolor eaque rerum asperiores recusandae
-            reiciendis molestiae quia est quam voluptas, quis libero optio
-            veritatis ducimus debitis corporis?
+            My passion lies in leveraging technologies to create impactful
+            projects, continually advancing web development.
           </p>
         </div>
         <Link href="/projects" className="link">
