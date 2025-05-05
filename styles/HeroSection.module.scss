@@ -33,9 +33,10 @@
 }
 
 .pageTitle {
-  max-width: 82rem;
+  max-width: 60rem;
   line-height: 1.2;
   font-size: 3.2rem;
+  letter-spacing: 0.15rem;
 
   @include mq_min780 {
     font-size: 5.6rem;

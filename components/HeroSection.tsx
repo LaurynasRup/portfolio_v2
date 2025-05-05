@@ -7,13 +7,13 @@ export default function HeroSection() {
     <section className={styles.heroSection}>
       <div className={styles.titleWrapper}>
         <h1 className={styles.pageTitle}>
-          {['Bringing', 'web', 'ideas', 'to', 'life'].map((word, idx) => (
+          {['Modern', '&', 'Clean', 'Web', 'Experiences'].map((word, idx) => (
             <span key={idx} className={styles.pageTitleSpanOuter}>
               <span className={styles.pageTitleSpanInner}>{word}&nbsp;</span>
             </span>
           ))}
         </h1>
-        <p className={styles.pageSubtitle}>by Laurynas Rupainis</p>
+        <p className={styles.pageSubtitle}>- Laurynas Rupainis</p>
       </div>
       <div className={styles.imageWrapper}>
         <DotsGraphic
