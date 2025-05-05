@@ -10,6 +10,6 @@
   pointer-events: none;
 
   @include mq_min540 {
-    background-color: #673f9c;
+    background-color: var(--primary-color-purple);
   }
 }
