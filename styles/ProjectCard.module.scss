@@ -11,6 +11,10 @@
     text-indent: -999rem;
     z-index: 9;
   }
+
+  &:hover .cardTitle::after {
+    opacity: 1;
+  }
 }
 
 .cardMainBody {
@@ -36,6 +40,23 @@
 
 .cardTitle {
   margin-top: 1.1rem;
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+
+  &::after {
+    content: '';
+    top: 0.5em;
+    right: 0;
+    position: relative;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--primary-color-purple);
+    border-radius: 100%;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+  }
 }
 
 .cardDots {

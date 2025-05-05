@@ -7,7 +7,7 @@ export default function HeroSection() {
     <section className={styles.heroSection}>
       <div className={styles.titleWrapper}>
         <h1 className={styles.pageTitle}>
-          {['Modern', 'Web', 'Development', 'Solutions'].map((word, idx) => (
+          {['Bringing', 'web', 'ideas', 'to', 'life'].map((word, idx) => (
             <span key={idx} className={styles.pageTitleSpanOuter}>
               <span className={styles.pageTitleSpanInner}>{word}&nbsp;</span>
             </span>

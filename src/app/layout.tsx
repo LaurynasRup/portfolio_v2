@@ -2,6 +2,7 @@ import './globals.css';
 import { Red_Hat_Display } from 'next/font/google';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import CustomCursor from '../../components/CustomCursor';
 
 const rh = Red_Hat_Display({
   subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
+        <CustomCursor />
       </body>
     </html>
   );

@@ -1,0 +1,15 @@
+@import './mixins.scss';
+
+.customCursor {
+  border-radius: 100%;
+  width: 0.75rem;
+  height: 0.75rem;
+  position: absolute;
+  background-color: transparent;
+  z-index: 999;
+  pointer-events: none;
+
+  @include mq_min540 {
+    background-color: #673f9c;
+  }
+}
