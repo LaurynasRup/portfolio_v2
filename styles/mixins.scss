@@ -1,3 +1,9 @@
+@mixin mq_min540 {
+  @media (min-width: 540px) {
+    @content;
+  }
+}
+
 @mixin mq_min780 {
   @media (min-width: 780px) {
     @content;
