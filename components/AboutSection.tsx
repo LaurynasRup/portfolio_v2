@@ -42,8 +42,8 @@ export default function AboutSection() {
             />
           </div>
           <p>
-            My name is Laurynas Rupainis, and I am a Web Developer based in
-            Garden of England (Kent).
+            My name is Laurynas Rupainis, and I am a Web Developer based in Kent
+            - the Garden of England.
           </p>
           <p>
             I've been building various websites and web apps since 2020, when I
