@@ -4,6 +4,7 @@ import { Major_Mono_Display } from 'next/font/google';
 import styles from '../styles/Nav.module.scss';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { useTheme } from 'next-themes'
 
 const major_mono_display = Major_Mono_Display({
   weight: '400',
@@ -33,6 +34,10 @@ export default function Nav() {
   const [wWidth, setWwidth] = useState(0);
   const [pathName, setPathName] = useState('');
 
+  const [mounted, setMounted] = useState(false)
+  const {systemTheme, theme, setTheme} = useTheme();
+  const [currentTheme, setCurrrentTheme] = useState('') 
+
   const ref = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -43,7 +48,17 @@ export default function Nav() {
     }
 
     setPathName(window.location.pathname);
+    setMounted(true);
+
+    if (theme && theme === 'system') {
+      setCurrrentTheme(systemTheme as string);
+    } else {
+      setCurrrentTheme(theme as string)
+    }
   }, []);
+
+
+
   const handleBtnClick = function (e: React.MouseEvent<HTMLElement>) {
     if (wWidth < 720) {
       (e.target as Element).classList.toggle(styles.navVisible);
@@ -80,6 +95,24 @@ export default function Nav() {
     }
   };
 
+  const handleThemeChange = function (e: React.MouseEvent<HTMLElement>) {
+
+    if (currentTheme === 'light' ) {
+      setTheme('dark');
+      setCurrrentTheme('dark');
+    } else {
+      setTheme('light');
+      setCurrrentTheme('light');
+    }
+  }
+
+  if (!mounted) {
+    return (
+      <>
+      </>
+    )
+  }
+
   return (
     <nav className={styles.nav}>
       <Link
@@ -88,8 +121,10 @@ export default function Nav() {
         onClick={handleLinkClick}
       >
         LR<span>.</span>
+
       </Link>
       <div className={styles.navMenu}>
+        <button className={`${styles.navThemeToggle} ${theme === 'dark' ? styles.navThemeToggleDark : styles.navThemeToggleLight}`} onClick={handleThemeChange}>theme toggle</button>
         <button
           className={styles.navTrigger}
           onClick={handleBtnClick}
@@ -118,4 +153,5 @@ export default function Nav() {
       </div>
     </nav>
   );
+
 }

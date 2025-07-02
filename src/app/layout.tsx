@@ -1,11 +1,11 @@
 import './globals.css';
-import { Red_Hat_Display } from 'next/font/google';
+import { Red_Hat_Text } from 'next/font/google';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import CustomCursor from '../../components/CustomCursor';
 import { ThemeProvider } from 'next-themes'
 
-const rh = Red_Hat_Display({
+const rh = Red_Hat_Text({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
   display: 'swap',
@@ -24,8 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={rh.className}>
-        <Nav />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Nav />
+          {children}
+          </ThemeProvider>
         <Footer />
         <CustomCursor />
       </body>
