@@ -3,6 +3,7 @@ import { Red_Hat_Display } from 'next/font/google';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import CustomCursor from '../../components/CustomCursor';
+import { ThemeProvider } from 'next-themes'
 
 const rh = Red_Hat_Display({
   subsets: ['latin'],
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={rh.className}>
         <Nav />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <Footer />
         <CustomCursor />
       </body>
