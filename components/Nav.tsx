@@ -4,7 +4,7 @@ import { Major_Mono_Display } from 'next/font/google';
 import styles from '../styles/Nav.module.scss';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { useTheme } from 'next-themes'
+import ThemeToggle from './ThemeToggle';
 
 const major_mono_display = Major_Mono_Display({
   weight: '400',
@@ -34,9 +34,7 @@ export default function Nav() {
   const [wWidth, setWwidth] = useState(0);
   const [pathName, setPathName] = useState('');
 
-  const [mounted, setMounted] = useState(false)
-  const {systemTheme, theme, setTheme} = useTheme();
-  const [currentTheme, setCurrrentTheme] = useState('') 
+  const [mounted, setMounted] = useState(false);
 
   const ref = useRef<HTMLButtonElement>(null);
 
@@ -49,15 +47,7 @@ export default function Nav() {
 
     setPathName(window.location.pathname);
     setMounted(true);
-
-    if (theme && theme === 'system') {
-      setCurrrentTheme(systemTheme as string);
-    } else {
-      setCurrrentTheme(theme as string)
-    }
   }, []);
-
-
 
   const handleBtnClick = function (e: React.MouseEvent<HTMLElement>) {
     if (wWidth < 720) {
@@ -95,22 +85,8 @@ export default function Nav() {
     }
   };
 
-  const handleThemeChange = function (e: React.MouseEvent<HTMLElement>) {
-
-    if (currentTheme === 'light' ) {
-      setTheme('dark');
-      setCurrrentTheme('dark');
-    } else {
-      setTheme('light');
-      setCurrrentTheme('light');
-    }
-  }
-
   if (!mounted) {
-    return (
-      <>
-      </>
-    )
+    return <></>;
   }
 
   return (
@@ -121,10 +97,9 @@ export default function Nav() {
         onClick={handleLinkClick}
       >
         LR<span>.</span>
-
       </Link>
       <div className={styles.navMenu}>
-        <button className={`${styles.navThemeToggle} ${theme === 'dark' ? styles.navThemeToggleDark : styles.navThemeToggleLight}`} onClick={handleThemeChange}>theme toggle</button>
+        <ThemeToggle />
         <button
           className={styles.navTrigger}
           onClick={handleBtnClick}
@@ -153,5 +128,4 @@ export default function Nav() {
       </div>
     </nav>
   );
-
 }
