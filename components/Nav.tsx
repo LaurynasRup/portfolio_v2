@@ -4,6 +4,7 @@ import { Major_Mono_Display } from 'next/font/google';
 import styles from '../styles/Nav.module.scss';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 
 const major_mono_display = Major_Mono_Display({
   weight: '400',
@@ -33,6 +34,8 @@ export default function Nav() {
   const [wWidth, setWwidth] = useState(0);
   const [pathName, setPathName] = useState('');
 
+  const [mounted, setMounted] = useState(false);
+
   const ref = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -43,7 +46,9 @@ export default function Nav() {
     }
 
     setPathName(window.location.pathname);
+    setMounted(true);
   }, []);
+
   const handleBtnClick = function (e: React.MouseEvent<HTMLElement>) {
     if (wWidth < 720) {
       (e.target as Element).classList.toggle(styles.navVisible);
@@ -80,6 +85,10 @@ export default function Nav() {
     }
   };
 
+  if (!mounted) {
+    return <></>;
+  }
+
   return (
     <nav className={styles.nav}>
       <Link
@@ -90,6 +99,7 @@ export default function Nav() {
         LR<span>.</span>
       </Link>
       <div className={styles.navMenu}>
+        <ThemeToggle />
         <button
           className={styles.navTrigger}
           onClick={handleBtnClick}

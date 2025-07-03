@@ -20,6 +20,9 @@
 
 .navMenu {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   @include mq_min780 {
     position: relative;
@@ -29,6 +32,7 @@
 .navTrigger {
   all: unset;
   padding: 2rem;
+  font-weight: var(--link-weight);
 }
 
 .navList {
@@ -74,6 +78,7 @@
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    font-weight: var(--link-weight);
   }
 
   a::after {
@@ -116,7 +121,7 @@
   top: 0;
   bottom: 0;
   margin-top: 8rem;
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color-bg);
   padding: 2rem;
   gap: 5rem;
   z-index: 999;
@@ -159,5 +164,19 @@
       margin-left: unset;
       margin-right: unset;
     }
+  }
+}
+
+.navThemeToggle {
+  all: unset;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  margin-top: 0.4rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
   }
 }
