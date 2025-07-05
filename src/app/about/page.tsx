@@ -15,21 +15,25 @@ export default function About() {
         <div className={styles.aboutSectionText}>
           <h3>Hi, I am Laurynas Rupainis,</h3>
           <p>
-            I'm Laurynas Rupainis, an experienced web developer from Kent. Since
-            early 2020, I've advanced from a junior to a seasoned professional.
-            While I specialize in Drupal development, exploring frontend
-            intricacies and backend functionalities, I also embrace various
-            technologies to broaden my skill set.
+            I'm an experienced web developer currently residing in Kent, UK. I
+            switched my career to development in early 2020, and it was the best
+            decision I ever made. I thoroughly enjoy being able to bring value
+            by solving problems, building real projects that people use, and
+            challenging myself to evolve in line with the ever-changing tech
+            world.
           </p>
           <p>
-            Staying updated with the latest advancements is crucial. I utilize
-            Next.js in personal projects for enhanced user experiences.
-            Currently, I'm exploring Rust for its innovation and learning
-            potential.
+            At my current job, I am usually responsible for building the
+            front-end in line with the design, however, I might occasionally
+            tackle the full scope of the project. I also participate in
+            discussions with back-end developers, designers, project managers,
+            and clients to keep everyone on the same page throughout the
+            project.
           </p>
           <p>
-            My passion lies in leveraging technologies to create impactful
-            projects, continually advancing web development.
+            Outside of work, you would usually find me in the gym, taking on
+            some DIY projects, or enjoying the beautiful surroundings of Kent
+            with my dog Hugo!
           </p>
         </div>
         <Link href="/projects" className="link">
