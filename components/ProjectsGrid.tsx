@@ -28,12 +28,6 @@ export default function ProjectsGrid() {
     }
   }, [filterVal]);
 
-  function getRandNum() {
-    const rndInt = Math.floor(Math.random() * 3) + 1;
-    return rndInt;
-  }
-
-  getRandNum();
   return (
     <>
       <div className={styles.projectFilterWrapper}>
