@@ -1,10 +1,12 @@
+'use client';
+
 import styles from '../styles/Nav.module.scss';
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { motion, stagger } from 'framer-motion';
 
 const ThemeToggle = () => {
-  const { systemTheme, theme, setTheme } = useTheme('');
+  const { systemTheme, theme, setTheme } = useTheme();
   const [currentTheme, setCurrrentTheme] = useState('');
   const [mounted, setMounted] = useState(false);
 
