@@ -23,12 +23,12 @@ export default function About() {
             world.
           </p>
           <p>
-            At my current job, I am usually responsible for building the
-            front-end in line with the design, however, I might occasionally
-            tackle the full scope of the project. I also participate in
-            discussions with back-end developers, designers, project managers,
-            and clients to keep everyone on the same page throughout the
-            project.
+            At my job, I am usually responsible for building and maintaining the
+            front-end for various projects, as well as collaborating with
+            designers and back-end developers. Occasionally, I might take on
+            some back-end work too. Communicating with project managers and
+            clients is also a regular part of my role to ensure smooth project
+            delivery.
           </p>
           <p>
             Outside of work, you would usually find me in the gym, taking on
