@@ -6,7 +6,7 @@ const projects = [
       'Built with NextJS and ExpressJS in TypeScript, this app features WebSocket streaming, API calls, data restructuring, cron updates, and powers an 8-screen display at AAM Duxford.',
     body: [
       'AAM Roll of Honour is by far the project I’m most proud of. Having previously exceeded client expectations during the main AAM website build, we were trusted to rebuild the Roll of Honour app.',
-      'This is not a typical website, but an app physically displayed at the AAM in Duxford on eight massive 4K screens, built using web technologies. I was the sole developer responsible for the build, with minimal supervision.',
+      'This is not a typical website, but an app physically displayed at the AAM in Duxford on eight massive 4K screens, built using web technologies. I was the sole developer responsible for the build, collaborating occasionally with the tech lead.',
       'The app was built with NextJS and ExpressJS, both written in TypeScript, as it required a server separate from the main client apps. It features various API calls and data restructuring, intricate WebSocket integration that controls delayed animations across the screens to create departure board-like effects, and cron functionality that periodically updates live data and images.',
       'This app is still running strong and can be seen live in action at the American Air Museum in Duxford.',
     ],
@@ -20,13 +20,13 @@ const projects = [
     id: 2,
     title: 'American Air Museum',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'A data-heavy Drupal website with a custom theme built using Twig, SCSS, and JavaScript. Features Gulp-managed assets, external libraries, SOLR Search, and a REST API.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      'AAM is one of the first websites for which I was solely responsible for building the front end. It is built on Drupal CMS, with a theme developed specifically for this project.',
+      "The theme is built using Drupal’s native Twig templates, SCSS for styling, and JavaScript to enhance the UI. Gulp was used to handle both SCSS and JS assets. The website utilizes a few external libraries such as SwiperJS, LightGallery, and Google Maps, which is integrated to work with the site's data. It is a data-heavy website, so SOLR Search is also implemented to improve query performance.",
+      'The website is configured to expose a REST API, which supplies content for the Roll of Honour app.',
     ],
-    tech: ['drupal', 'twig', 'js', 'css'],
+    tech: ['drupal', 'twig', 'js', 'css', 'php'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
     type: 'work',
     promoted: true,
