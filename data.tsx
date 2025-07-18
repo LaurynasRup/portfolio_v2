@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: 'AAM Roll of Honour',
     body_short:
-      'Built with NextJS and ExpressJS in TypeScript, this app features WebSocket streaming, API calls, data restructuring, cron updates, and powers an 8-screen display at AAM Duxford.',
+      'A NextJS and ExpressJS application built in TypeScript, offering WebSocket streaming, API integrations, data restructuring, scheduled updates via cron, and powering an 8-screen display at AAM Duxford.',
     body: [
       'AAM Roll of Honour is by far the project I’m most proud of. Having previously exceeded client expectations during the main AAM website build, we were trusted to rebuild the Roll of Honour app.',
       'This is not a typical website, but an app physically displayed at the AAM in Duxford on eight massive 4K screens, built using web technologies. I was the sole developer responsible for the build, collaborating occasionally with the tech lead.',
@@ -24,7 +24,7 @@ const projects = [
     body: [
       'AAM is one of the first websites for which I was solely responsible for building the front end. It is built on Drupal CMS, with a theme developed specifically for this project.',
       "The theme is built using Drupal’s native Twig templates, SCSS for styling, and JavaScript to enhance the UI. Gulp was used to handle both SCSS and JS assets. The website utilizes a few external libraries such as SwiperJS, LightGallery, and Google Maps, which is integrated to work with the site's data. It is a data-heavy website, so SOLR Search is also implemented to improve query performance.",
-      'The website is configured to expose a REST API, which supplies content for the Roll of Honour app.',
+      'The website is also configured to expose a REST API, which supplies content for the Roll of Honour app.',
     ],
     tech: ['drupal', 'twig', 'js', 'css', 'php'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
@@ -36,11 +36,11 @@ const projects = [
     id: 3,
     title: 'British Ecological Society',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'A WordPress website offering scientific content, membership services, CRM integration, and access to multiple archives for researchers and professionals in the scientific community.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      'We took over this website from another agency and were asked to build a new theme that works with the existing database and keeps the current membership management features in place.',
+      'The project came with its challenges—mainly because there wasn’t much documentation, and the Blulight CRM integration for managing memberships was quite complex. On top of that, we had to handle a lot of relational data to support multiple archives.',
+      'The BES website runs on standard WordPress tech—PHP, HTML, and SCSS (compiled to CSS). I was the main developer on the project, responsible for building the new theme and making sure everything kept running smoothly.' ,
     ],
     tech: ['wp', 'php', 'css', 'js'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
