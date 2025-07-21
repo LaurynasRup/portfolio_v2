@@ -40,7 +40,7 @@ const projects = [
     body: [
       'We took over this website from another agency and were asked to build a new theme that works with the existing database and keeps the current membership management features in place.',
       'The project came with its challenges—mainly because there wasn’t much documentation, and the Blulight CRM integration for managing memberships was quite complex. On top of that, we had to handle a lot of relational data to support multiple archives.',
-      'The BES website runs on standard WordPress tech—PHP, HTML, and SCSS (compiled to CSS). I was the main developer on the project, responsible for building the new theme and making sure everything kept running smoothly.' ,
+      'The BES website runs on standard WordPress tech—PHP, HTML, and SCSS (compiled to CSS). I was the main developer on the project, responsible for building the new theme and making sure everything kept running smoothly.',
     ],
     tech: ['wp', 'php', 'css', 'js'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
@@ -116,17 +116,16 @@ const projects = [
     id: 8,
     title: 'DonStone Dashboard',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'Inventory app for a headstone manufacturer featuring barcode scanning, galleries, and role-based access. Built with React, NodeJS, and MongoDB to replace paper-based processes.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      'An inventory management app built for a headstone manufacturer. The app is developed using React, NodeJS, and MongoDB. It features user authentication with role-based permissions, various CRUD operations, a barcode scanner, and product galleries.',
+      "This app enabled the company to transition from an old-fashioned, paper-based inventory management system to a digital one. As a result, it simplified the company's operations, increased efficiency, and made employees’ jobs easier.",
     ],
-    tech: ['css', 'js', 'twig', 'drupal'],
+    tech: ['react', 'node', 'mongodb', 'css'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
     type: 'personal',
     promoted: false,
-    link: 'project-number-7',
+    link: 'project-number-8',
   },
 ];
 

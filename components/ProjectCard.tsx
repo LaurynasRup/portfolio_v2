@@ -21,6 +21,7 @@ const ProjectCard: FunctionComponent<Props> = ({
   tech,
   type,
 }) => {
+  console.log(link);
   return (
     <article className={styles.card}>
       <div className={styles.cardMainBody}>
