@@ -42,7 +42,6 @@ const ThemeToggle = () => {
     setMounted(true);
     if (theme == 'system') {
       setCurrrentTheme(systemTheme as string);
-      console.log(currentTheme);
     } else {
       setCurrrentTheme(theme as string);
     }

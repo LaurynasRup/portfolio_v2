@@ -98,15 +98,15 @@ const projects = [
   },
   {
     id: 7,
-    title: 'Nurse Note (in progress)',
+    title: 'Nurse Note (wip)',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'This multi-platform app enables nurses to quickly access content, featuring a mobile app and admin dashboard built with React Native, React, Supabase, Typesense, and OAuth.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      'This app enables nurses to quickly access protocols for various procedures, perform drug calculations, and reference notes.',
+      'The system consists of a mobile application built with React Native (Expo) and an admin dashboard developed using React and Svelte. Supabase functions as the RESTful backend for both the mobile and dashboard applications.',
+      'The mobile app features instant content search powered by the Typesense search engine, custom navigation, and a content bookmarking system. The dashboard provides robust content management capabilities. Both applications implement OAuth for secure authentication.',
     ],
-    tech: ['css', 'js', 'twig', 'drupal'],
+    tech: ['react', 'expo', 'node', 'supabase'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
     type: 'personal',
     promoted: false,
