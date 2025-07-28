@@ -67,11 +67,10 @@ const projects = [
     id: 5,
     title: 'Parkinsons Europe',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'An informative WordPress site with a custom theme, built using PHP, SCSS, and JS. Features scalable, modular design with ACF, Gulp-optimized assets, mega-menu, custom archives, and Mailchimp integration.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      "An informative website that provides general information and advice to people affected by Parkinson's. This website is built with WordPress, with a custom theme developed for it.",
+      'The theme is built using standard WordPress technologies – PHP, SCSS, and JavaScript. Advanced Custom Fields (ACF) were used extensively to provide scalability and maintain a modular theme structure, while also enabling a flexible content editing experience. The theme assets are compiled and optimized with Gulp. Website features include various custom archives, a responsive mega-menu, Mailchimp integration, and various third-party enhancements.',
     ],
     tech: ['wp', 'php', 'js', 'css'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
