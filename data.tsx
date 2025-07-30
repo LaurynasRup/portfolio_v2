@@ -82,11 +82,10 @@ const projects = [
     id: 6,
     title: 'Vale Holiday Parks',
     body_short:
-      'Sagittis neque odio nec vivamus posuere malesuada commodo nostra, curabitur pharetra lobortis potenti accumsan lacus diam, gravida cursus lectus integer egestas felis suspendisse.',
+      'A Drupal website I helped maintain and enhance, implementing mega nav, interactive SVG map, swipers, sticky elements, and theme updates aligned with a design refresh.',
     body: [
-      'Phasellus magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Vestibulum rutrum, mi nec elementum vehicula, eros quam gravida nisl, id fringilla neque ante vel mi.Praesent congue erat at massa. Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Etiam vitae tortor.',
-      'In ac felis quis tortor malesuada pretium. Aenean vulputate eleifend tellus. Aenean viverra rhoncus pede.Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Phasellus gravida semper nisi. Nam pretium turpis et arcu.',
-      'Duis leo. Fusce a quam. Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit.',
+      'I was part of the maintenance team for this Drupal website, responsible for both ongoing support and the development of new features. During this time, I was involved in building a mega navigation menu, implemented an interactive SVG map, and developed various swipers and image galleries. I also worked on adding sticky UI elements to enhance the user experience.',
+      "I also played an active role in the visual refresh of the site. This included updating the theme to reflect the new design direction and ensuring consistency across the site's layout and components.",
     ],
     tech: ['drupal', 'twig', 'css', 'js'],
     img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
