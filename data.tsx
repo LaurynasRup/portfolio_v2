@@ -27,7 +27,12 @@ const projects = [
       'The website is also configured to expose a REST API, which supplies content for the Roll of Honour app.',
     ],
     tech: ['drupal', 'twig', 'js', 'css', 'php'],
-    img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
+    img: [
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/AAM_home.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/AAM_archive.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/AAM_gallery.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/AAM_map.png',
+    ],
     type: 'work',
     promoted: true,
     link: 'project-number-2',
@@ -54,11 +59,16 @@ const projects = [
     body_short:
       'An internal Drupal tool for collecting inspirational charity websites, built with a custom theme, smooth animations, infinite scroll, and a bookmarking feature.',
     body: [
-      'An internal tool/website that I developed together with the design team. The website allows designers to bookmark inspirational sites that feature standout design elements and focus on the charity industry.',
+      'An internal tool/website that I developed together with the design team. The website allows designers to bookmark inspirational sites that feature standout design elements and focus on the non-profit industry.',
       'The site is built on Drupal with a custom theme, using traditional tools like PHP, SCSS, and JavaScript. It includes smooth animations, an archive page with infinite scroll (using AJAX), and bookmarking functionality for saving and organizing inspiration.',
     ],
     tech: ['drupal', 'twig', 'css', 'js'],
-    img: ['/img1.jpg', '/img2.jpg', '/img3.jpg'],
+    img: [
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/HGL_home_cuxtk4.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/HGL_home2_kbohv8.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/HGL_site_d_zhrwvh.png',
+      'https://res.cloudinary.com/dtsgbqybk/image/upload/e_colorize:15,co_rgb:212121/q_auto/f_auto/HGL_site_m_rep2wt.png',
+    ],
     type: 'work',
     promoted: false,
     link: 'project-number-4',
