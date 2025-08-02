@@ -6,11 +6,17 @@ export const metadata: Metadata = {
   title: 'Laurynas Rupainis | Project',
 };
 
-export default function page({ params }: { params: { projectName: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ projectName: string }>;
+}) {
+  const { projectName } = await params;
+
   return (
     <main>
       <section className={styles.wrapper}>
-        <IndividualProjectGrid projectName={params.projectName} />
+        <IndividualProjectGrid projectName={projectName} />
       </section>
     </main>
   );
