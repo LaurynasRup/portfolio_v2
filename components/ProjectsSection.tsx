@@ -42,7 +42,7 @@ export default function ProjectsSection() {
           .map(card => (
             <ProjectCard
               key={card.id}
-              img={`/img1.jpg`}
+              img={card.img[0]}
               title={card.title}
               body={card.body_short}
               link={card.link}

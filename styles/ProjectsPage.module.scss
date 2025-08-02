@@ -21,7 +21,6 @@
   animation: appear 1s ease;
 
   @include mq_min780 {
-    gap: 10rem;
     margin-top: 4.6rem;
   }
 }

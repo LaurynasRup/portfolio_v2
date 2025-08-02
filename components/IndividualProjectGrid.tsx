@@ -18,7 +18,7 @@ export default function IndividualProjectGrid({
   }
   return (
     <>
-      {project && <h1>Project: {project.title}</h1>}
+      {project && <h1>{project.title}</h1>}
       <div className={styles.textWrapper}>
         <ul className={`${styles.projectTechList} techList`}>
           {project.tech.map(item => (

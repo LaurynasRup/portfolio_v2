@@ -45,7 +45,7 @@ export default function ProjectsGrid() {
         {fileteredProjects.map(card => (
           <ProjectCard
             key={card.id}
-            img={`/img2.jpg`}
+            img={card.img[0]}
             title={card.title}
             body={card.body_short}
             link={card.link}

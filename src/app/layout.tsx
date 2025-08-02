@@ -3,7 +3,7 @@ import { Red_Hat_Text } from 'next/font/google';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import CustomCursor from '../../components/CustomCursor';
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider } from 'next-themes';
 
 const rh = Red_Hat_Text({
   subsets: ['latin'],
@@ -22,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={rh.className}>
         <ThemeProvider>
           <Nav />
           {children}
-          </ThemeProvider>
+        </ThemeProvider>
         <Footer />
         <CustomCursor />
       </body>
