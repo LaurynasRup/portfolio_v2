@@ -6,12 +6,13 @@ export const metadata: Metadata = {
   title: 'Laurynas Rupainis | Project',
 };
 
-export default async function page({
+export default async function Page({
   params,
 }: {
-  params: { projectName: string };
+  params: Promise<{ projectName: string }>;
 }) {
   const { projectName } = await params;
+
   return (
     <main>
       <section className={styles.wrapper}>
