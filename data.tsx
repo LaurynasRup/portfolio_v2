@@ -16,7 +16,7 @@ const projects = [
     ],
     type: 'work',
     promoted: true,
-    link: 'project-number-1',
+    link: 'roh',
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const projects = [
     ],
     type: 'work',
     promoted: true,
-    link: 'project-number-2',
+    link: 'aam',
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const projects = [
       'A WordPress website offering scientific content, membership services, CRM integration, and access to multiple archives for researchers and professionals in the scientific community.',
     body: [
       'We took over this website from another agency and were asked to build a new theme that works with the existing database and keeps the current membership management features in place.',
-      'The project came with its challenges - mainly because there wasn’t much documentation, and the Blulight CRM integration for managing memberships was quite complex. On top of that, we had to handle a lot of relational data to support multiple archives.',
+      'The project came with its challenges - mainly because there wasn’t much documentation, and the Bluelight CRM integration for managing memberships was quite complex. On top of that, we had to handle a lot of relational data to support multiple archives.',
       'The BES website runs on standard WordPress tech - PHP, HTML, and SCSS. I was the main developer on the project, responsible for building the new theme and making sure everything kept running smoothly.',
     ],
     tech: ['wp', 'php', 'css', 'js'],
@@ -58,7 +58,7 @@ const projects = [
     ],
     type: 'work',
     promoted: true,
-    link: 'project-number-3',
+    link: 'bes',
   },
   {
     id: 4,
@@ -78,7 +78,7 @@ const projects = [
     ],
     type: 'work',
     promoted: false,
-    link: 'project-number-4',
+    link: 'hgl',
   },
   {
     id: 5,
@@ -98,7 +98,7 @@ const projects = [
     ],
     type: 'work',
     promoted: false,
-    link: 'project-number-5',
+    link: 'pe',
   },
   {
     id: 6,
@@ -117,7 +117,7 @@ const projects = [
     ],
     type: 'work',
     promoted: false,
-    link: 'project-number-6',
+    link: 'vale',
   },
   {
     id: 7,
@@ -139,7 +139,7 @@ const projects = [
     ],
     type: 'personal',
     promoted: false,
-    link: 'project-number-7',
+    link: 'nurse-note',
   },
   {
     id: 8,
@@ -160,7 +160,7 @@ const projects = [
     ],
     type: 'personal',
     promoted: false,
-    link: 'project-number-8',
+    link: 'ds-dashboard',
   },
 ];
 
